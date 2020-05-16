@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/style.css">  
+        <style>
+            @media only screen and (max-width: 768px) {
+                /* For mobile phones: */
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+            
+            .flex-container {
+                display: flex;
+                justify-content: center;
+                padding-top: 12px;
+                margin: 20px 20px; 
+            }
+            .flex-container a {
+                text-decoration: none;
+            }
+            .flex-container .fle1 {
+                display: block;
+                text-align: center;
+                padding: 220px 70px 20px 20px;
+                background-color: rgb(226, 226, 226);
+                border: 2px solid red;
+            
+            }
+            .flex-container .fle2 {
+                display: block;
+                text-align: center;
+                padding: 220px 40px 20px 40px;
+                background-color: rgb(226, 226, 226);
+                border: 2px solid red;
+            }
+            .flex-container .fle3 {
+                display: block;
+                text-align: center;
+                padding: 220px 40px 20px 40px;
+                background-color: rgb(226, 226, 226);
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="header">
+            
+                <nav id="nav-bar" align="center">
+                    <img align="left" src="https://s1.logaster.com/static/v3/img/products/logo.webp" alt="" id="header-img"><br>
+                    <a href="#learn-more" class="nav-link">Learn More</a>
+                    <a href="#buy-on-amazon" class="nav-link">Buy on Amazon</a>
+                    <a href="#contact-us" class="nav-link">Contact Us</a>   
+                </nav>
+            
+            
+        </header>
+        <center>
+            <div class="register">
+                <form action="mailto:ventaspubleec@gmail.com"></form>
+                    <label for="email">Free Register</label><br>
+                    <input type="email" name="mail" id="mailto" placeholder="Sign Up and Recive mor News!!!"><br>
+                    
+                <input type="submit" value="submit">
+            </div>
+            <div class="video" align="center">   
+                <section id="learn-more">
+                    <h1>The New SAMSUNG Galaxy S20</h1>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/k28V3p-I9Yw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </div>
+        </center>
+        
+
+        <div class="amazon">
+            <section align="center" id="buy-on-amazon">
+                <a href="https://www.amazon.com/Samsung-SM-G985F-Display-Unlocked-International/dp/B085F3VMT8/ref=sr_1_6?dchild=1&keywords=samsung+galaxy+s20&qid=1589604025&sr=8-6" target="blank">View on Amazon</a>
+            </section>
+        </div>
+        <div class="flex-container" col-3>
+            <div class="fle1">
+                <a href="#"><p>Buy Now for: $1199</p></a>
+            </div>
+            <div class="fle2">
+                <a href="#"><p>2 orders for: $2199</p></a>
+            </div>
+            <div class="fle3">
+                <a href="#"><p>$129 7month Warranty</p></a>
+            </div>
+        </div>
+        
+</body>
+    <div class="footer">
+        <footer>
+            <section id="contact-us">
+                <form action="mailto:https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="text" name="fullname" id="name" required placeholder="Full Name"><br>
+                    <input type="email" name="email" id="email" placeholder="Ex: abcde@xmail.com" required><br>
+                    <textarea name="textarea" id="textbox" maxlength="140" placeholder="Mesage" required></textarea><br>
+
+                    <input type="submit" value="Send Mail" id="submit">
+                </form>
+            </section>
+        </footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
